@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vrwan - Professional PowerPoint Redesign Services</title>
+    <title>Vrwan - Pricing | Professional PowerPoint Redesign Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -46,10 +46,10 @@
                     </div>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#services" class="text-gray-700 hover:text-purple-600 transition">Services</a>
-                    <a href="#portfolio" class="text-gray-700 hover:text-purple-600 transition">Portfolio</a>
-                    <a href="#testimonials" class="text-gray-700 hover:text-purple-600 transition">Testimonials</a>
-                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition">Contact</a>
+                    <a href="#services" class="text-gray-700 hover:text-purple-600 transition" onclick="smoothScroll('services')">Services</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-purple-600 transition" onclick="smoothScroll('portfolio')">Portfolio</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-purple-600 transition" onclick="smoothScroll('testimonials')">Testimonials</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition" onclick="smoothScroll('contact')">Contact</a>
                 </div>
                 <div class="md:hidden">
                     <button id="menu-btn" class="text-gray-700 focus:outline-none">
@@ -59,10 +59,10 @@
             </div>
             <!-- Mobile menu -->
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
-                <a href="#services" class="block py-2 text-gray-700 hover:text-purple-600 transition">Services</a>
-                <a href="#portfolio" class="block py-2 text-gray-700 hover:text-purple-600 transition">Portfolio</a>
-                <a href="#testimonials" class="block py-2 text-gray-700 hover:text-purple-600 transition">Testimonials</a>
-                <a href="#contact" class="block py-2 text-gray-700 hover:text-purple-600 transition">Contact</a>
+                <a href="#services" class="block py-2 text-gray-700 hover:text-purple-600 transition" onclick="smoothScroll('services')">Services</a>
+                <a href="#portfolio" class="block py-2 text-gray-700 hover:text-purple-600 transition" onclick="smoothScroll('portfolio')">Portfolio</a>
+                <a href="#testimonials" class="block py-2 text-gray-700 hover:text-purple-600 transition" onclick="smoothScroll('testimonials')">Testimonials</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-purple-600 transition" onclick="smoothScroll('contact')">Contact</a>
             </div>
         </div>
     </nav>
@@ -70,34 +70,130 @@
     <!-- Hero Section -->
     <section class="gradient-bg text-white py-20">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 slide-in">Make Your Ideas Shine</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto slide-in">Professional PowerPoint redesign services to elevate your presentations and captivate your audience.</p>
-            <a href="#contact" class="bg-white text-purple-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 inline-block slide-in">
-                Get Started
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 slide-in">Clear Pricing for Winning Presentations</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto slide-in">Invest in a presentation that delivers results. We offer straightforward packages designed for clarity and impact, with no hidden costs.</p>
+            <a href="#pricing" class="bg-white text-purple-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 inline-block slide-in">
+                View Plans
             </a>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-16 bg-white">
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 bg-white">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Services</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gray-50 p-8 rounded-xl hover-scale">
-                    <div class="text-purple-600 text-4xl mb-4">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Professional PowerPoint Redesign</h3>
-                    <p class="text-gray-600">We transform your existing presentations into visually stunning masterpieces that communicate your message with clarity and impact.</p>
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Choose Your Plan</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Essential -->
+                <div class="bg-gray-50 p-8 rounded-xl flex flex-col">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-1">Essential Redesign</h3>
+                    <p class="text-sm text-gray-500 mb-4">Quick makeovers & internal meetings</p>
+                    <p class="text-3xl font-bold text-purple-600 mb-6">Starts at $129</p>
+                    <ul class="space-y-3 text-gray-700 mb-8 flex-grow">
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i>Up to 15 Slides</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i>Redesign of Your Existing Content</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i>Brand Guideline Alignment</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i>1 Round of Revisions</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i>Standard Stock Photos & Icons</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i>5-Day Delivery</li>
+                    </ul>
+                    <a href="#contact" class="w-full bg-purple-600 text-white font-bold py-3 rounded-full hover:bg-purple-700 transition text-center">Get Started</a>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-xl hover-scale">
-                    <div class="text-purple-600 text-4xl mb-4">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Tailored Presentations</h3>
-                    <p class="text-gray-600">Custom-designed presentations that align perfectly with your brand, audience, and objectives to make your message unforgettable.</p>
+
+                <!-- Business Pro -->
+                <div class="relative bg-purple-100 border-2 border-purple-600 p-8 rounded-xl flex flex-col">
+                    <span class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-purple-600 text-white px-4 py-1 rounded-full text-sm font-semibold">MOST POPULAR</span>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-1">Business Pro</h3>
+                    <p class="text-sm text-gray-500 mb-4">Pitch decks, sales & conferences</p>
+                    <p class="text-3xl font-bold text-purple-600 mb-6">Starts at $349</p>
+                    <ul class="space-y-3 text-gray-700 mb-8 flex-grow">
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i>Up to 25 Slides</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i><strong>Full Custom Design from Scratch</strong></li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i><strong>Advanced Infographics & Data Storytelling</strong></li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i><strong>3 Rounds of Revisions</strong></li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i><strong>Premium Stock Photos & Custom Icons</strong></li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i><strong>3-4 Day Fast-Track Delivery</strong></li>
+                    </ul>
+                    <a href="#contact" class="w-full bg-purple-600 text-white font-bold py-3 rounded-full hover:bg-purple-700 transition text-center">Choose Pro</a>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="bg-gray-50 p-8 rounded-xl flex flex-col">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-1">Enterprise Custom</h3>
+                    <p class="text-sm text-gray-500 mb-4">Corporate templates & large-scale projects</p>
+                    <p class="text-3xl font-bold text-purple-600 mb-6">Let's Talk</p>
+                    <ul class="space-y-3 text-gray-700 mb-8 flex-grow">
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i>25+ Slides</li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i><strong>Bespoke Presentation Template Creation</strong></li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i><strong>Interactive Elements & Animations</strong></li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i><strong>Unlimited Revisions</strong></li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i><strong>Dedicated Project Manager</strong></li>
+                        <li class="flex items-center"><i class="fas fa-check text-purple-600 mr-3"></i>Custom Delivery Timeline</li>
+                    </ul>
+                    <a href="#contact" class="w-full border border-purple-600 text-purple-600 font-bold py-3 rounded-full hover:bg-purple-600 hover:text-white transition text-center">Contact Us</a>
                 </div>
             </div>
+            <div class="text-center mt-8">
+                <p class="text-lg text-purple-600 font-medium inline-block px-4 py-2 rounded-full bg-purple-50">
+                    Need it faster? 🚀 Ask about our 24-hour Express Delivery service.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Plans Include -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Guaranteed with Every Project</h2>
+            <div class="max-w-3xl mx-auto grid md:grid-cols-2 gap-x-8 gap-y-6 text-gray-700">
+                <div class="flex items-start">
+                    <i class="fas fa-check-circle text-purple-600 text-xl mr-3 mt-1"></i>
+                    <span><strong>100% Editable Final File</strong> (.pptx)</span>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-brain text-purple-600 text-xl mr-3 mt-1"></i>
+                    <span><strong>Strategic Structure Review</strong></span>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-shield-alt text-purple-600 text-xl mr-3 mt-1"></i>
+                    <span><strong>Full Confidentiality</strong> (NDA on request)</span>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-comments text-purple-600 text-xl mr-3 mt-1"></i>
+                    <span><strong>Prompt & Friendly Support</strong></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Answering Your Questions</h2>
+            <div class="space-y-6">
+                <details class="group">
+                    <summary class="cursor-pointer font-bold text-gray-800 flex justify-between items-center">What if my project doesn't fit these packages? <i class="fas fa-chevron-down group-open:rotate-180 transition-transform"></i></summary>
+                    <p class="mt-2 text-gray-600">We love custom projects! Simply click "Request a Quote" and tell us about your needs. We’ll build a proposal just for you.</p>
+                </details>
+                <details class="group">
+                    <summary class="cursor-pointer font-bold text-gray-800 flex justify-between items-center">What is the process after I choose a plan? <i class="fas fa-chevron-down group-open:rotate-180 transition-transform"></i></summary>
+                    <p class="mt-2 text-gray-600">It's simple! 1. You send us your content and brand assets. 2. We design the first draft. 3. You provide feedback. 4. We finalize and deliver your amazing presentation.</p>
+                </details>
+                <details class="group">
+                    <summary class="cursor-pointer font-bold text-gray-800 flex justify-between items-center">Do you offer content writing or research? <i class="fas fa-chevron-down group-open:rotate-180 transition-transform"></i></summary>
+                    <p class="mt-2 text-gray-600">Our core service is design. However, we partner with excellent copywriters and can include this as part of a custom Enterprise package.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Impress Your Audience?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Let's create a presentation that not only looks stunning but also achieves your objectives. Get in touch today.</p>
+            <a href="#contact" class="bg-white text-purple-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 inline-block">
+                Get My Free Quote Now
+            </a>
         </div>
     </section>
 
@@ -244,27 +340,6 @@
             <div class="max-w-4xl mx-auto">
                 <div class="grid md:grid-cols-2 gap-12">
                     <div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-4">Contact Information</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-start">
-                                <div class="text-purple-600 text-xl mr-4 mt-1">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-gray-800">Email</h4>
-                                    <p class="text-gray-600">ilyassmounir18@gmail.com</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <div class="text-purple-600 text-xl mr-4 mt-1">
-                                    <i class="fas fa-globe"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-gray-800">Website</h4>
-                                    <p class="text-gray-600">www.vrwan.com</p>
-                                </div>
-                            </div>
-                        </div>
                         <div class="mt-8">
                             <h3 class="text-xl font-bold text-gray-800 mb-4">Follow Us</h3>
                             <div class="flex space-x-4">
@@ -320,6 +395,17 @@
     </footer>
 
     <script>
+        // Smooth scroll function
+        function smoothScroll(target) {
+            const element = document.getElementById(target);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
         // Mobile menu toggle
         document.getElementById('menu-btn').addEventListener('click', function() {
             const menu = document.getElementById('mobile-menu');
